@@ -1,0 +1,143 @@
+body {
+    padding-top: 50px;
+}
+/*.starter-template {*/
+    /*padding: 40px 15px;*/
+    /*text-align: center;*/
+/*}*/
+.navbar-right {
+    padding-right: 0px;
+}
+.navbar-brand {
+    /*/max-width: 80px;*/
+}
+
+.main-content{
+    padding-top: 10px;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.right-inner-addon {
+    position: relative;
+    padding-bottom: 20px;
+}
+.right-inner-addon input {
+    padding-right: 30px;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.btn{
+    margin-bottom: 15px;
+    background: lightgreen;
+}
+.left {
+     float: left;
+     width: 20%;
+ }
+.left_nav {
+    float: left;
+    width: 20%;
+    padding-right: 10px;
+}
+.right {
+    overflow: hidden;
+    float: right;
+    width: 80%;
+}
+/*#map_canvas {*/
+    /*position: relative;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+/*}*/
+.angular-google-map-container {
+    height: 520px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navigation_bar_bg{
+    height: 60px;
+    background: rgba(97,176,240,1);
+    background: -moz-linear-gradient(left, rgba(97,176,240,1) 0%, rgba(97,176,240,1) 47%, rgba(28,102,183,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,176,240,1)), color-stop(47%, rgba(97,176,240,1)), color-stop(100%, rgba(28,102,183,1)));
+    background: -webkit-linear-gradient(left, rgba(97,176,240,1) 0%, rgba(97,176,240,1) 47%, rgba(28,102,183,1) 100%);
+    background: -o-linear-gradient(left, rgba(97,176,240,1) 0%, rgba(97,176,240,1) 47%, rgba(28,102,183,1) 100%);
+    background: -ms-linear-gradient(left, rgba(97,176,240,1) 0%, rgba(97,176,240,1) 47%, rgba(28,102,183,1) 100%);
+    background: linear-gradient(to right, rgba(97,176,240,1) 0%, rgba(97,176,240,1) 47%, rgba(28,102,183,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b0f0', endColorstr='#1c66b7', GradientType=1 );
+}
+.tab_button{
+    height: 60px;
+    float: left;
+    width: 6em;
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+#navcontainer ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color:transparent;
+}
+
+#navcontainer ul li a:hover
+{
+    color: #fff;
+    background-color: #369;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.navbar-item{
+    min-height: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+#map {
+    height: 520px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+h2 {
+    margin-bottom:0;
+    margin-top: 0;
+}

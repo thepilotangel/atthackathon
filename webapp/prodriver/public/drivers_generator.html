@@ -1,0 +1,57 @@
+<html>
+<script src="/dpd.js"></script>
+<script>
+    [
+        'Twinkie',
+        'Roasted',
+        'Chicken',
+        'Chocolate',
+        'Raisin',
+        'Grilled',
+        'Vanilla',
+        'Carrot',
+        'Spicy',
+        'Cheese',
+        'Pineapple',
+        'Caesar',
+        'Baked',
+        'Stir',
+        'Macaroni',
+        'Broccoli',
+        'Peanut',
+        'Doritos',
+        'Milky',
+        'Scanadu'
+    ].forEach(
+            function (name) {
+                dpd.drivers.post(
+                        {
+                            lastname: name,
+                            firstname: name,
+                            companyname: name,
+                            driverlicenseid: name,
+                            longtitude:-115 +  Math.round((Math.random()*100)/100),
+                            latitude:36 + Math.round((Math.random()*100)/100)
+                        }
+                )
+            }
+    );
+    // LONGITUDE -180 to + 180
+    function generateRandomLong() {
+        var num = (Math.random()*180).toFixed(3);
+        var posorneg = Math.floor(Math.random());
+        if (posorneg == 0) {
+            num = num * -1;
+        }
+        return num;
+    }
+    // LATITUDE -90 to +90
+    function generateRandomLat() {
+        var num = (Math.random()*90).toFixed(3);
+        var posorneg = Math.floor(Math.random());
+        if (posorneg == 0) {
+            num = num * -1;
+        }
+        return num;
+    }
+</script>

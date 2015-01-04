@@ -1,7 +1,7 @@
 /**
  * Created by vu on 1/3/15.
  */
-angular.module('prodriver', ['ngRoute','dpdCollection','ngTable','toaster','ngCsv'])
+angular.module('prodriver', ['ngRoute','dpdCollection','ngTable','toaster','ngCsv','google-maps'])
 .config(
 ['$routeProvider', function ($routeProvider) {
   $routeProvider.when(

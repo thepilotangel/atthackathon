@@ -1,0 +1,77 @@
+{
+	"type": "Collection",
+	"properties": {
+		"firstname": {
+			"name": "firstname",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "firstname",
+			"order": 0
+		},
+		"lastname": {
+			"name": "lastname",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "lastname",
+			"order": 1
+		},
+		"companyname": {
+			"name": "companyname",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "companyname",
+			"order": 2
+		},
+		"driverlicenseid": {
+			"name": "driverlicenseid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "driverlicenseid",
+			"order": 3
+		},
+		"mobilephone": {
+			"name": "mobilephone",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "mobilephone",
+			"order": 4
+		},
+		"notes": {
+			"name": "notes",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "notes",
+			"order": 5
+		},
+		"isalert": {
+			"name": "isalert",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": false,
+			"id": "isalert",
+			"order": 6
+		},
+		"latitude": {
+			"name": "latitude",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "latitude",
+			"order": 7
+		},
+		"longtitude": {
+			"name": "longtitude",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "longtitude",
+			"order": 8
+		}
+	}
+}
