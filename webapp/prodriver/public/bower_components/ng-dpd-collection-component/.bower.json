@@ -1,0 +1,41 @@
+{
+  "name": "ng-dpd-collection-component",
+  "version": "0.0.5",
+  "homepage": "https://github.com/ng-dpd/collection-component",
+  "authors": [
+    "Jeff Cross <middlefloor@gmail.com>"
+  ],
+  "description": "An AngularJS component for deployd collection resource optimized for Bootstrap 3.",
+  "main": "dist/collection-component.js",
+  "keywords": [
+    "deployd",
+    "dpd",
+    "angular",
+    "javascript",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "src/",
+    "**/.*",
+    "bower_components/",
+    "node_modules/",
+    "package.json",
+    "test",
+    "dist.js",
+    "karma.conf.js",
+    "README.md"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.2.8"
+  },
+  "_release": "0.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.5",
+    "commit": "76002a3045f73d82ba86b753aa2275a8c4a675de"
+  },
+  "_source": "git://github.com/ng-dpd/collection-component.git",
+  "_target": "~0.0.5",
+  "_originalSource": "ng-dpd-collection-component"
+}
