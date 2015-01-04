@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"heartrate": {
+			"name": "heartrate",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "heartrate",
+			"order": 0
+		},
+		"bloodpressure": {
+			"name": "bloodpressure",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "bloodpressure",
+			"order": 1
+		},
+		"gyrometer": {
+			"name": "gyrometer",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "gyrometer",
+			"order": 2
+		},
+		"accelerometer": {
+			"name": "accelerometer",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "accelerometer",
+			"order": 3
+		},
+		"geolat": {
+			"name": "geolat",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "geolat",
+			"order": 4
+		},
+		"geolong": {
+			"name": "geolong",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "geolong",
+			"order": 5
+		}
+	}
+}

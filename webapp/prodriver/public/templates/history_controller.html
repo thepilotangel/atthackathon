@@ -1,4 +1,32 @@
-<div>
-    <h1>History</h1>
+<div class="main-content">
+    <!--<input type="text" ng-model="search" />-->
 
+    <div class="right-inner-addon ">
+        <i class="icon-search"></i>
+        <input type="text"
+               class="form-control"
+               ng-model="search"
+               placeholder="Search"/>
+    </div>
+    <table ng-table="tableParams" class="table">
+        <tr ng-repeat="historyinfo in $data|filter:search">
+            <td data-title="'Heart Rate'" sortable="'deviceId'">
+                {{historyinfo.heart_rate}}
+            </td>
+            <td data-title="'GPS_LAT'" sortable="'deviceId'">
+                {{historyinfo.heart_rate}}
+            </td>
+            <td data-title="'GPS_LONG'" sortable="'deviceId'">
+                {{historyinfo.heart_rate}}
+            </td>
+            <td data-title="'date added'" sortable="'dateadd'">
+                {{historyinfo.dateadd | date:'yyyy-MM-dd HH:mm:ss Z'}}
+            </td>
+            <td data-title="'date modified'" sortable="'datemod'">
+                {{historyinfo.datemod | date:'yyyy-MM-dd HH:mm:ss Z'}}
+            </td>
+
+        </tr>
+    </table>
+    <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
 </div>

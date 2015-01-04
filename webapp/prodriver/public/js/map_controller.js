@@ -50,7 +50,13 @@ controller(
     var info = {
       lat:  parseFloat(driver.latitude),
       long: parseFloat(driver.longtitude),
-      message: "This is a test marker"
+      message: "Driver OK",
+      desc: "This driver is under control"
+    }
+    if(driver.isalert){
+      info.message= "Potential Intoxication !!!",
+      info.desc="This driver might be under influence"
+      info.isalert = true;
     }
     createMarker(info)
   }
@@ -79,16 +85,40 @@ controller(
       title:    info.message
     }
     );
-    marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
+    if (!info.isalert) {
+      marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
+    }else{
+      marker.content = '<div id="reparse_helper_'+marker.id +'class="infoWindowContent">'
+                       + info.desc +'<br><br>'+
+                       '<button onClick='+"location='https://localhost:9001/'"+' style="float: left;padding-left: 20px;background-color: orangered;width: 100px;height: 40px">'+
+                          '<i style="padding-right: 10px;font-size= 50px;color: white" class="fa fa-phone"></i>'+
+//                            '<span style="color:white;text-align: center">CALL DRIVER</span>'
+                       '</button>'+
+                       '<button ng-click="triggerEmergency()" style="float: right;padding-right: 20px;background-color: lightyellow;width: 100px;height: 40px">'+
+                       '<i style="padding-left:10px;font-size= 50px;color: grey" class="fa fa-warning"></i>'+
+//                            '<span style="color:white;text-align: center">CALL DRIVER</span>'
+                       '</button>'
 
+                       '</div>';
+    }
+    $scope.trigger_call = function() {
+      alert('Trigger call now');
+    }
+    $scope.triggerEmergency = function() {
+      alert('Trigger Emergency now');
+    }
     google.maps.event.addListener(
     marker, 'click', function () {
       infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
       infoWindow.open($scope.map, marker);
     }
     );
-
+    infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
+    infoWindow.open($scope.map, marker);
+    google.maps.event.addListener(marker.id, 'domready', function(a,b,c,d) {
+      onload();});
     $scope.markers.push(marker);
+
 
   }
 
@@ -97,6 +127,10 @@ controller(
     e.preventDefault();
     google.maps.event.trigger(selectedMarker, 'click');
   }
-
+  var onload = function() {
+    $scope.$apply(function(){
+      $compile(document.getElementById("reparse_helper_"+marker.id))($scope)
+    });
+  }
 }]
 );
